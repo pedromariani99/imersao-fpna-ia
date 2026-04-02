@@ -12,8 +12,7 @@ const inclusions = [
 
 export function Pricing() {
   const handleCTA = () => {
-    // Link para checkout — substituir pela URL real
-    window.open('https://checkout.exemplo.com', '_blank')
+    window.open('https://invoice.infinitepay.io/pedro-henrique-61n/7a05mFps2H', '_blank')
   }
 
   return (
