@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: #002DA6;
+    --color-primary-hover: #00238A;
+    --color-primary-light: #A3D1F6;
+    --color-primary-lightest: #E4F0FC;
+    --color-dark: #161E1C;
+    --color-dark-lighter: #1E2725;
+    --color-accent: #E8833A;
+    --color-accent-hover: #D4702E;
+    --color-bg: #F7F9FC;
+    --color-text: #161E1C;
+    --color-text-muted: #6B7280;
+    --color-border: #E2E8F0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-dark font-body antialiased;
+    font-feature-settings: 'ss01', 'kern';
+  }
+
+  ::selection {
+    background: #002DA6;
+    color: white;
+  }
+
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  .grain-overlay {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .grain-overlay::before {
+    content: '';
+    position: absolute;
+    inset: -200%;
+    width: 400%;
+    height: 400%;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+    background-size: 128px 128px;
+    animation: grain 8s steps(10) infinite;
+    opacity: 0.03;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .font-display {
+    font-family: var(--font-display), Georgia, serif;
+  }
+
+  .font-mono-custom {
+    font-family: var(--font-mono), monospace;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #161E1C;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1E2725;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #002DA6;
+}
