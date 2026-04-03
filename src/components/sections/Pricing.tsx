@@ -12,7 +12,7 @@ const inclusions = [
 
 export function Pricing() {
   const handleCTA = () => {
-    window.open('https://invoice.infinitepay.io/pedro-henrique-61n/7a05mFps2H', '_blank')
+    window.open('https://pay.kiwify.com.br/JsxaUZB', '_blank')
   }
 
   return (
