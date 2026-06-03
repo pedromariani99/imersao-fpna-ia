@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button'
 const inclusions = [
   '7 horas de imersão ao vivo',
   'Case real completo do início ao fim',
-  'Replay por 90 dias',
+  'Replay vitalício',
   'Templates e frameworks de prompts',
   'Grupo exclusivo + certificado',
 ]

@@ -15,7 +15,7 @@ const faqs = [
   },
   {
     q: 'A imersão será gravada?',
-    a: 'Sim. Todos os participantes recebem o replay com acesso por 90 dias.',
+    a: 'Sim. Todos os participantes recebem o replay com acesso vitalício.',
   },
   {
     q: 'Funciona para quem trabalha em empresa, não em consultoria?',

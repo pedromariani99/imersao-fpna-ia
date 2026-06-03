@@ -5,8 +5,8 @@ import { Play, FileText, Users, Sparkles, MessageSquare } from 'lucide-react'
 const deliverables = [
   {
     icon: Play,
-    title: 'Replay integral',
-    description: 'Acesso por 90 dias para assistir quantas vezes quiser.',
+    title: 'Replay vitalício',
+    description: 'Acesso vitalício para assistir quantas vezes quiser.',
   },
   {
     icon: FileText,
